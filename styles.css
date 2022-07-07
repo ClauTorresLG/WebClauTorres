@@ -1,0 +1,52 @@
+/* Colores
+aqua claro #05F2DB
+aqua oscuro #0A7368
+negro #131311
+blanco #F2F2F2
+naranja #FF7C1A 
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body, 
+.card{
+    background-color: #131311;
+}
+
+.navbar .nav-link:hover,
+.navbar-social svg:hover{
+    color: #FF7C1A;
+    fill: #FF7C1A;
+}
+
+.card-body{
+    color: #F2F2F2;
+    padding-top: 50px;
+}
+
+.card-body p{
+    padding-top: 30px;
+}
+
+.btn-descarga{
+    border-color: #0A7368;
+    margin-top: 30px;
+    padding: 5px 15px;
+}
+
+.btn-descarga a{
+    color: #05F2DB;
+}
+
+.btn-descarga:hover{
+    border-color: #FF7C1A;
+}
+
+.btn-descarga a:hover{
+    color: #FF7C1A;
+}
+
