@@ -19,17 +19,14 @@
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="./imgs/logo CT png.png" alt="Logo Clau Torres" style="width: 100px; height: auto; margin-left: 40px;"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+        <a class="navbar-brand" href="#"><img src="./imgs/logo CT png.png" alt="Logo Clau Torres" style="width: 100px; height: auto; margin-left: 55px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" style="margin-right: 20px;">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Clau Torres</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #05F2DB;">Clau Torres</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="container-fluid position-absolute top-50 start-100 translate-middle">
-            <span class="navbar-text"  style="font-size: x-large; color: #05F2DB;">Bienvenida</span>
         </div>
         <div class="offcanvas-body position-relative">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-right: 60px;">
@@ -50,17 +47,15 @@
         <div class="card mb-3" style="width: 90%; margin: auto; border-style: none;">
             <div class="row g-0">
                 <div class="col-md-6">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
+                    <img src="./imgs/foto perfil con nombre CT.png" class="img-fluid rounded-start" alt="..." style="margin-top: 2rem; max-height: 400px;">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body">
                         <h1 class="card-title">Hola, soy <font color="#05F2DB">Clau</font> Torres</h1>
                         <p class="card-text">Meeting planner con más de 10 años de experiencia organizando eventos corporativos y deportivos. Actual estudiante de Diseño UX/UI y tutora de Desarrollo Web.</p>
-                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                        <img src="" alt="">
-                        <button type="button" class="btn btn-outline-primar btn-sm btn-descarga"><a href="#sobre_mi">Sobre mí</a></button>
-                        <button type="button" class="btn btn-outline-primar btn-sm btn-descarga"><a href="#a&e">Alumni & Expertise</a></button>
-                        <button type="button" class="btn btn-outline-primar btn-sm btn-descarga"><a href="#voluntariado">Voluntariado</a></button>
+                        <button type="button" class="btn btn-outline-primar btn-seccion"><a href="#sobre_mi">Sobre mí</a></button>
+                        <button type="button" class="btn btn-outline-primar btn-seccion"><a href="#a&e">Alumni & Expertise</a></button>
+                        <button type="button" class="btn btn-outline-primar btn-seccion"><a href="#voluntariado">Voluntariado</a></button>
                     </div>
                 </div>
             </div>
@@ -69,20 +64,131 @@
 
     <!-- Sobre mí -->
     <section id="sobre_mi">
-
+        <div class="card mb-3" style="width: 90%;  margin: 60px auto; border-style: none;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h2 class="card-title subtitulo">Un poco sobre mí</h2>
+                        <p class="card-text">Soy una persona muy activa e inquieta, me gusta  viajar y aprender, y la combinación de ambas actividades es lo que me ha dado las mejores experiencias.</p> 
+                        <p>Tengo una combinación de geek y nerd; me encanta el mundo de la fantasía y la ficción que el cine, la televisión y los libros ofrecen, siendo éstos mis mayores pasatiempos.</p>
+                        </div>
+                </div>
+                <div class="col-md-6  d-flex align-items-center" style="padding-left: 5rem;">
+                    <img src="./imgs/logo CT png.png" class="img-fluid rounded-start" alt="..." style="max-height: 250px;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="frase_weebly">"... it's more like a big ball of wibbly-wobbly, timey-wimey stuff."</p>
+        </div>
     </section>
+
+    <section id="habilidades">
+        <div class="grid_hab">
+            <div class="tv">
+                <h2 class="texto_vertical">Habilidades</h2>
+            </div>
+            <div class="hab1">
+                <ul>
+                    <li>
+                        <p>Organización de Eventos MICE</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%; " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Organización de Eventos Deportivos</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Planeación de agendas para viajes internacionales</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hab2">
+                <ul>
+                    <li>
+                        <p>Diseño y Desarrollo Web</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Diseño UX/UI</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Trabajo bajo presión</p>
+                        <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Alumni & Expertise -->
-    <section id="a&e">
-
+    <section id="aye">
+        <div class="grid_aye">
+            <div class="alumni">
+                <h2 class="subtitulo">Alumni</h2>
+                <div>
+                    <h4>Diseño UX/UI</h4>
+                    <p>CODERHOUSE. On-line. En curso. Inicio Junio 2022.</p>
+                </div>
+                <div>
+                    <h4>Desarrollo Web</h4>
+                    <p>CODERHOUSE. On-line. Desarrollo de sitios web con el uso de HTML, CSS, Bootstrap, Sass, Git y GitHub. Inicio Junio 2022.</p>
+                </div>
+                <div>
+                    <h4>Master in Business Administration</h4>
+                    <p>IE Business School. Presencial, Madrid, España. Agosto 2006 a Junio 2007.</p>
+                </div>
+                <div>
+                    <h4>English Course</h4>
+                    <p>University of Queensland. Presencial, Brisbane, Australia. Julio a Septiembre 2005.</p>
+                </div>
+            </div>
+            <div class="expertise">
+                <h2 class="subtitulo">Expertise</h2>
+                <div>
+                    <h4>Tutora Curso Desarrollo Web</h4>
+                    <p>CODERHOUSE. Asesorar y guiar a los estudiantes durante toda la cursada para que la correcta aplicación de los conocimientos en un proyecto final. Inicio Marzo 2022 - Actualidad.</p>
+                </div>
+                <div>
+                    <h4>Analista de Cotizaciones</h4>
+                    <p>BTC Americas. Cotización y organización de eventos nacionales e internacionales para clientes como PG-Comex, Toyota, Alsea, L'oreal, RB - Mead Johnson, VolksWagen, entre otros.  Marzo 2019 - Mayo 2022.</p>
+                </div>
+                <div>
+                    <h4>Ejecutiva de Cuenta y Venta de Patrocinios</h4>
+                    <p>PRIM Eventos.  Venta de patrocinios para Cisco Live LATAM. Coordinadora de eventos empresariales para clientes como Cisco, Hewlett Packard y Aruba Networks. Agosto 2016 - Enero 2019.</p>
+                </div>
+                <div>
+                    <h4>Coordinadora de eventos y patrocinios</h4>
+                    <p>Plataforma Sports. Coordinadora de patrocinios deportivos y apoyo en la organización de los torneos Copa Telmex, Homeless World Cup 2012, Liga de Beisbol Telmex. Febrero 2011 - Diciembre 2014.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+    
     <!-- Voluntariado -->
     <section id="voluntariado">
 
     </section>
 
     <!-- Footer -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid" style="margin: 0">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -100,8 +206,8 @@
             </ul>
             </div>
         </div>
-        <a class="navbar-brand" href="./index.html"><img src="./imgs/logo CT png.png" alt="Logo Clau Torres" style="width: 100px; height: auto; margin-left: 40px;"></a>
-        <div class="container-fluid navbar-social" style="width: 55%; padding-right: 50px;">
+        <a class="navbar-brand" href="./index.html"><img src="./imgs/logo CT png.png" alt="Logo Clau Torres" style="width: 70px; height: auto; margin-left: 40px;"></a>
+        <div class="container-fluid navbar-social" style="padding-right: 50px;">
             <span class="p-0 text-white-50">© 2022 Company, Inc</span>
             <a href="https://www.linkedin.com/in/clautorreslg/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16">

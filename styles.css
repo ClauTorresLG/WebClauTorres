@@ -32,21 +32,93 @@ body,
     padding-top: 30px;
 }
 
-.btn-descarga{
+.btn-seccion{
     border-color: #0A7368;
     margin-top: 30px;
     padding: 5px 15px;
 }
 
-.btn-descarga a{
+.btn-seccion a,
+.subtitulo,
+.texto_vertical{
     color: #05F2DB;
 }
 
-.btn-descarga:hover{
+.btn-seccion:hover{
     border-color: #FF7C1A;
 }
 
-.btn-descarga a:hover{
+.btn-seccion a:hover{
     color: #FF7C1A;
 }
 
+.frase_weebly{
+    color: #FF7C1A;
+    text-align: right;
+    margin-right: 5rem;
+}
+
+.texto_vertical{
+    -webkit-transform: rotate(-90deg);
+    margin: 30px -120px;
+}
+
+.grid_hab{
+    display: grid;
+    grid-template-columns: 12% 40% 40%;
+    grid-template-rows: 200px;
+    grid-template-areas: "tv hab1 hab2";
+    gap: 20px;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.tv{
+    grid-area: tv;
+}
+
+.hab1 ul,
+.hab2 ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.hab1 li p,
+.hab2 li p{
+    padding-top: 2rem;
+}
+
+.grid_aye{
+    display: grid;
+    grid-template-areas: "alumni expertise";
+    gap: 50px;
+    margin: 100px 50px;
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .grid_aye{
+        grid-template-areas: "alumni"
+                            "expertise";
+        padding: 0;
+    }
+
+    .grid_hab{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 350px;
+        grid-template-areas: "tv hab1" 
+                            "tv hab2";
+        padding: 0;
+        gap: 0;
+    }
+
+    .hab1,
+    .hab2{
+        padding-right: 40px;
+    }
+
+    .texto_vertical{
+        margin: 10px -120px;
+    }
+}
