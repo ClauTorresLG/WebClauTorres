@@ -1,10 +1,13 @@
-/* Colores
-aqua claro #05F2DB
-aqua oscuro #0A7368
-negro #131311
-blanco #F2F2F2
-naranja #FF7C1A 
-*/
+:root{
+    --aquaclaro: #05F2DB;
+    --aquaoscuro: #0A7368;
+    --negro: #131311;
+    --blanco: #F2F2F2;
+    --naranja: #FF7C1A;
+    --titulo: 'Jost', sans-serif;
+    --texto: 'Montserrat', sans-serif;
+    --italica: 'Edu NSW ACT Foundation', cursive;
+}
 
 * {
 	margin: 0;
@@ -17,108 +20,232 @@ body,
     background-color: #131311;
 }
 
-.navbar .nav-link:hover,
-.navbar-social svg:hover{
-    color: #FF7C1A;
-    fill: #FF7C1A;
-}
+/* Navbar */
+    .logo-nav img{
+        width: 80px; 
+        height: auto; 
+        margin-left: 3.5rem;
+    }
 
-.card-body{
-    color: #F2F2F2;
-    padding-top: 50px;
-}
+    .offcanvas-title{
+        color: var(--aquaclaro);
+    }
 
-.card-body p{
-    padding-top: 30px;
-}
+    .navbar-bar{
+        margin-right: 60px;
+    }
 
-.btn-seccion{
-    border-color: #0A7368;
-    margin-top: 30px;
-    padding: 5px 15px;
-}
+    .nav h5{
+        font-family: var(--titulo);
+    }
 
-.btn-seccion a,
-.subtitulo,
-.texto_vertical{
-    color: #05F2DB;
-}
+    .nav-link{
+        font-family: var(--texto);
+        color: var(--aquaclaro);
+        font-size: .9rem;
+    }
 
-.btn-seccion:hover{
-    border-color: #FF7C1A;
-}
+    .nav-link:hover,
+    .navbar-social svg:hover{
+        color: var(--naranja);
+        fill: var(--naranja);
+    }
 
-.btn-seccion a:hover{
-    color: #FF7C1A;
-}
+/* Bienvenida */
+    #bienvenida img{
+        margin-top: 2rem; 
+        max-height: 400px;
+    }
 
-.frase_weebly{
-    color: #FF7C1A;
-    text-align: right;
-    margin-right: 5rem;
-}
+    #bienvenida .card-title{
+        font-family: var(--titulo);
+        font-size: 3rem;
+    }
 
-.texto_vertical{
-    -webkit-transform: rotate(-90deg);
-    margin: 30px -120px;
-}
+    .card-body{
+        color: var(--blanco);
+        padding-top: 4rem;
+    }
 
-.grid_hab{
-    display: grid;
-    grid-template-columns: 12% 40% 40%;
-    grid-template-rows: 200px;
-    grid-template-areas: "tv hab1 hab2";
-    gap: 20px;
-    padding: 20px 30px;
-    margin-top: 30px;
-}
+    .card-body .card-text{
+        font-family: var(--texto);
+        font-size: 1.2rem;
+        padding-top: 30px;
+    }
 
-.tv{
-    grid-area: tv;
-}
+    .card-body .hashtag{
+        font-size: 1.7rem;
+        padding-top: 45px;
+    }
 
-.hab1 ul,
-.hab2 ul{
-    list-style-type: none;
-    padding-left: 10px;
-}
+    .btn-seccion{
+        border-color: var(--aquaoscuro);
+        margin-top: 30px;
+        padding: 5px 15px;
+    }
 
-.hab1 li p,
-.hab2 li p{
-    padding-top: 2rem;
-}
+    .btn-seccion a,
+    .subtitulo,
+    .texto_vertical{
+        color: var(--aquaclaro);
+        font-family: var(--titulo);
+    }
 
-.grid_aye{
-    display: grid;
-    grid-template-areas: "alumni expertise";
-    gap: 50px;
-    margin: 100px 50px;
-    padding: 0 30px;
-}
+    .btn-seccion:hover{
+        border-color: #FF7C1A;
+    }
 
-@media screen and (max-width: 767px) {
-    .grid_aye{
-        grid-template-areas: "alumni"
-                            "expertise";
-        padding: 0;
+    .btn-seccion a:hover{
+        color: #FF7C1A;
+    }
+
+/* Sobre mí */
+    #aye{
+        padding-top: 3rem;
+    }
+    #sobre_mi .card{
+        width: 90%;  
+        margin: 60px auto; 
+        border-style: none;
+    }
+
+    .logo-sobremi{
+        padding-left: 5rem;
+    }
+
+    .logo-sobremi img{
+        max-height: 250px;
+    }
+
+    #sobre_mi .card-text,
+    .hab1 p,
+    .hab2 p,
+    .alumni p,
+    .alumni h4,
+    .expertise p,
+    .expertise h4{
+        font-family: var(--texto);
+        color: var(--blanco);
+    }
+
+    #sobre_mi .card-text{
+        padding-top: 1rem;
+    }
+
+    .alumni h4,
+    .expertise h4{
+        color: var(--naranja);
+        font-size: 1rem;
+    }
+
+    .alumni h4,
+    .alumni p,
+    .expertise h4,
+    .expertise p{
+        font-size: 1rem;
+    }
+
+    .frase_weebly{
+        color: var(--naranja);
+        text-align: right;
+        margin-right: 5rem;
+        font-family: var(--italica);
+        font-size: 1.4rem;
+    }
+
+/* Habilidades */
+    .texto_vertical{
+        -webkit-transform: rotate(-90deg);
+        margin: 30px -120px;
     }
 
     .grid_hab{
         display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 350px;
-        grid-template-areas: "tv hab1" 
-                            "tv hab2";
-        padding: 0;
-        gap: 0;
+        grid-template-columns: 12% 40% 40%;
+        grid-template-rows: 300px;
+        grid-template-areas: "tv hab1 hab2";
+        gap: 20px;
+        padding: 20px 30px;
+        margin-top: 30px;
     }
 
-    .hab1,
-    .hab2{
-        padding-right: 40px;
+    .tv{
+        grid-area: tv;
     }
 
-    .texto_vertical{
-        margin: 10px -120px;
+    .hab1 ul,
+    .hab2 ul{
+        list-style-type: none;
+        padding-left: 10px;
     }
-}
+
+    .hab1 li p,
+    .hab2 li p{
+        padding-top: 2rem;
+    }
+
+/* Alumni & Expertise */
+    .grid_aye{
+        display: grid;
+        grid-template-areas: "alumni expertise";
+        gap: 50px;
+        margin:20px 50px;
+        padding: 0 30px;
+    }
+
+/* Voluntariado */
+
+
+/* Footer */
+    .boton-footer{
+        margin: 0
+    }
+
+    footer .navbar-brand img{
+        width: 70px; 
+        height: auto; 
+        margin-left: 40px;
+    }
+
+/* Media Quaries */
+    @media screen and (max-width: 1023px) {
+        #bienvenida .card-title{
+            font-size: 2.2rem;
+        }
+        .card-body{
+            padding-top: 40px;
+        }
+        .card-body .hashtag{
+            font-size: 1.3rem;
+            padding-top: 20px;
+        }
+        #sobre_mi .card{
+            margin-top: 10px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .grid_aye{
+            grid-template-areas: "alumni"
+                                "expertise";
+            padding: 0;
+        }
+
+        .grid_hab{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 350px;
+            grid-template-areas: "tv hab1" 
+                                "tv hab2";
+            padding: 0;
+            gap: 0;
+        }
+
+        .hab1,
+        .hab2{
+            padding-right: 40px;
+        }
+
+        .texto_vertical{
+            margin: 10px -120px;
+        }
+    }
