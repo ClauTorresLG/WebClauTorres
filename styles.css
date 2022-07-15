@@ -64,7 +64,7 @@ body,
 
     .card-body{
         color: var(--blanco);
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
 
     .card-body .card-text{
@@ -103,7 +103,8 @@ body,
     #aye{
         padding-top: 3rem;
     }
-    #sobre_mi .card{
+    #sobre_mi .card,
+    #voluntariado .card{
         width: 90%;  
         margin: 60px auto; 
         border-style: none;
@@ -193,19 +194,55 @@ body,
         padding: 0 30px;
     }
 
-/* Voluntariado */
+    .logos{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
 
+    .logos img{
+        border-radius: 50%;
+        width: 5.5rem;
+        height: auto;
+    }
 
 /* Footer */
-    .boton-footer{
-        margin: 0
+    #footer .card-header{
+        border-color: var(--aquaclaro);
+    }
+    
+    #footer .card-body{
+        padding-top: 0;
     }
 
-    footer .navbar-brand img{
-        width: 70px; 
-        height: auto; 
-        margin-left: 40px;
+    #footer .navbar-brand img{
+        width: 8rem;
+        height: auto;
     }
+
+    .btn-primary{
+        border-color: var(--aquaclaro);
+        background-color: var(--aquaclaro) ;
+        color: var(--negro);
+        font-family: var(--titulo);
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    .btn-primary:hover{
+        border-color: #FF7C1A;
+        background-color: var(--naranja);
+    }
+
+    .btn-primary a:hover{
+        color: #FF7C1A;
+    }
+
+    .p-2 svg:hover{
+        fill: var(--naranja);
+    }
+    
+
 
 /* Media Quaries */
     @media screen and (max-width: 1023px) {
@@ -248,4 +285,12 @@ body,
         .texto_vertical{
             margin: 10px -120px;
         }
+    
+        .logos img{
+            border-radius: 50%;
+            width: 2.5rem;
+            height: auto;
+        }
+        
+        
     }
